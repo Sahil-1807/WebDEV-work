@@ -1,0 +1,78 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variable */
+:root{
+    --navbar-height: 59px;
+
+}
+
+/* navigation bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* navigation bar logo */
+#logo{
+    margin: -24px -40px;
+}
+#logo img{
+    height: 97px;
+    margin: 7px 6px;
+    padding: 14px 10px;
+}
+/* navigation bar list styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 6px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../images/bg5.jfif') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
